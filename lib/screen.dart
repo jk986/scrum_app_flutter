@@ -20,7 +20,7 @@ class JsonListViewScreenState extends State<JsonListViewScreen> {
   }
 
   Future<void> loadItems() async {
-    // Carga el JSON desde el archivo assets
+    // Cargar el JSON desde el archivo assets
     String jsonString =
         await DefaultAssetBundle.of(context).loadString('assets/data_scrum.json');
     List<dynamic> jsonList = json.decode(jsonString);
@@ -35,7 +35,7 @@ class JsonListViewScreenState extends State<JsonListViewScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      backgroundColor: Colors.blue,
+      backgroundColor: const Color.fromARGB(255, 245, 108, 66),
         title: const Text('SCRUM', style:TextStyle(color:Colors.white, fontWeight: FontWeight.bold))),
       backgroundColor: Colors.cyan[100],
       body: ListView.builder(

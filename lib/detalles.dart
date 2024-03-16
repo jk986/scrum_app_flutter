@@ -12,7 +12,7 @@ class ItemDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 240, 106, 66),
         title: const Text('Detalles'),
       ),
       backgroundColor: Colors.lightBlue[100],
